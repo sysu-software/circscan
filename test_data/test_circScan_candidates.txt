@@ -1,0 +1,2 @@
+#chrom	chromStart	chromEnd	name	score	strand	mismatchNum	t2cNum	acceptReadNum	donorReadNum	FDR	junctionPosInRead	readName	readSeq
+testSeq	50	1535	ENST00000625883.1|CDR1-AS|ENSG00000281508.1|CDR1-AS-001|antisense	52	+	0	0	3	5	0.00000	22	1665211-1	TTCCAGTGTCTGCAATATCCAGGGTTTCCGATGGCACCTGTGTCAAGGTCTT
