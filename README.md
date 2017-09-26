@@ -1,7 +1,7 @@
 # circscan
 circScan: Discovering the Circular RNA Interactions with RNA-binding Proteins and Ribosomes
 
-/*****************************************************************************************
+*****************************************************************************************<BR>
  \*	circScan - An algorithm for discovering circRNA interactions with RNA-binding proteins<BR>
  \*  (RBPs) and ribosomes from short-read (18-50nt) CLIP-seq and ribo-seq datasets<BR>
  \*<BR>
@@ -11,7 +11,7 @@ circScan: Discovering the Circular RNA Interactions with RNA-binding Proteins an
  \*	<BR>
  \*  Create date: 09/18/2016<BR>
  \*  <BR>
- ****************************************************************************************/
+ ****************************************************************************************<BR>
 
 Overview:
 ---------
