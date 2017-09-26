@@ -2,15 +2,15 @@
 circScan: Discovering the Circular RNA Interactions with RNA-binding Proteins and Ribosomes
 
 /*****************************************************************************************
- *	circScan - An algorithm for discovering circRNA interactions with RNA-binding proteins 
- *  (RBPs) and ribosomes from short-read (18-50nt) CLIP-seq and ribo-seq datasets
- *
- *	Author : Jian-Hua Yang <yangjh7@mail.sysu.edu.cn>
- * 
- *	RNA Information Center, School of Life Sciences, Sun Yat-Sen University
- *	
- *  Create date: 09/18/2016
- *  
+ \*	circScan - An algorithm for discovering circRNA interactions with RNA-binding proteins
+ \*  (RBPs) and ribosomes from short-read (18-50nt) CLIP-seq and ribo-seq datasets
+ \*
+ \*	Author : Jian-Hua Yang <yangjh7@mail.sysu.edu.cn>
+ \* 
+ \*	RNA Information Center, School of Life Sciences, Sun Yat-Sen University
+ \*	
+ \*  Create date: 09/18/2016
+ \*  
  ****************************************************************************************/
 
 Overview:
