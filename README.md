@@ -54,7 +54,7 @@ Compiler: The source code is compiled with  the C++ compiler g++. We test the co
 Libraries and other installation requirements: circScan includes one software library: the BamTools library package. All will automatically compile during circScan installation process.<BR>
 By default, circScan does not require any additional libraries to be installed by you.<BR>
 
-Prerequisites<BR>
+Prerequisites:<BR>
 ---------
 Dependencies: The input of circScan is sorted BAM file. So you need the short read mapper bowtie2 or other mappers (e.g. STAR) and samtools up and running.<BR>
 You can get the most fresh versions:<BR>
@@ -91,23 +91,23 @@ bowtie2-build genome/hg38.gencode.fa genome/hg38.gencode<BR>
 How to get unmapped reads:
 ---------
 1. aligned the short CLIP-seq reads to genome and transcriptome<BR>
-(1) bowtie2 -p 16 -t -k 4 --no-unal -D 200 -R 3 -N 0 -L 15 -i S,1,0.5 \<BR>
-    --score-min=C,-16,0 -f -U <your_reads.fa> -x ./genome/hg38 --un ./genome/genome.unmapped.fa \<BR>
+(1) bowtie2 -p 16 -t -k 4 --no-unal -D 200 -R 3 -N 0 -L 15 -i S,1,0.5 \\<BR>
+    --score-min=C,-16,0 -f -U <your_reads.fa> -x ./genome/hg38 --un ./genome/genome.unmapped.fa \\<BR>
     >./genome/genome.alignments.bwt2 2>./genome/bowtie2.genome.log<BR>
 (2) cd genome;<BR>
 (3) samtools view -bS genome.alignments.bwt2 >genome.alignments.bam<BR>
 (4) samtools sort genome.alignments.bam genome.alignments.sorted<BR>
 (5) samtools index genome.alignments.sorted.bam<BR>
 (6) aligned the unmapped reads to transcriptome<BR>
-    bowtie2 -p 16 -t --no-unal -D 200 -R 3 -N 0 -L 15 -i S,1,0.5 \<BR>
-    --score-min=C,-16,0 -f -U genome.unmapped.fa -x ./genome/hg38.gencode --un ./genome/genome.transcriptome.unmapped.fa \<BR>
+    bowtie2 -p 16 -t --no-unal -D 200 -R 3 -N 0 -L 15 -i S,1,0.5 \\<BR>
+    --score-min=C,-16,0 -f -U genome.unmapped.fa -x ./genome/hg38.gencode --un ./genome/genome.transcriptome.unmapped.fa \\<BR>
     >./genome/transcriptome.alignments.bwt2 2>./genome/bowtie2.transcriptome.log<BR>
 
 Now, you can get the unmapped read file "genome.transcriptome.unmapped.fa" in genome directory for the circScan<BR>
 
 run circScan:
 ---------
-bin/circScan ./genome/hg38.fa ./genome/hg38.fa.fai ./genome/hg38.gencode.bed12 ./genome/genome.alignments.sorted.bam ./genome/genome.transcriptome.unmapped.fa \<BR>
+bin/circScan ./genome/hg38.fa ./genome/hg38.fa.fai ./genome/hg38.gencode.bed12 ./genome/genome.alignments.sorted.bam ./genome/genome.transcriptome.unmapped.fa \\<BR>
 >./genome/circScan_candidate_circRNAs.txt<BR>
 
 Output:
