@@ -21,12 +21,12 @@ Using circScan, one can easy and efficient to detect circRNAs from various CLIP-
 
 Usage:
 ---------
-Usage:  circScan [options] <genome file> <genome fai> <annotation file, bed12> <mapped alignments, bam> <unmapped read, fa>
-File format for annotation must be UCSC bed12
-Mapped alignments must be sorted BAM format
+Usage:  circScan [options] <genome file> <genome fai> <annotation file, bed12> <mapped alignments, bam> <unmapped read, fa><BR>
+File format for annotation must be UCSC bed12<BR>
+Mapped alignments must be sorted BAM format<BR>
 
-[options]
--v/--verbose                : verbose information
+[options]<BR>
+-v/--verbose                : verbose information<BR>
 -V/--version                : circScan version
 -o/--outfile <string>       : output file
 -p/--parclip                : par-clip datasets
