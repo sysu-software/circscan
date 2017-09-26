@@ -1,18 +1,6 @@
 # circScan
 circScan: Discovering the Circular RNA Interactions with RNA-binding Proteins and Ribosomes
 
-*****************************************************************************************<BR>
- \*	circScan - An algorithm for discovering circRNA interactions with RNA-binding proteins<BR>
- \*  (RBPs) and ribosomes from short-read (18-50nt) CLIP-seq and ribo-seq datasets<BR>
- \*<BR>
- \*	Author : Jian-Hua Yang <yangjh7@mail.sysu.edu.cn><BR>
- \* <BR>
- \*	RNA Information Center, School of Life Sciences, Sun Yat-Sen University<BR>
- \*	<BR>
- \*  Create date: 09/18/2016<BR>
- \*  <BR>
- ****************************************************************************************<BR>
-
 Overview:
 ---------
 circScan is an algorithm for identifying circRNA interactions with RBPs and ribosomes from 
@@ -43,6 +31,7 @@ Download circScan-0.1.tar.gz from http://rna.sysu.edu.cn/circscan/Download.php; 
 tar -xzvf circScan-0.1.tar.gz<BR>
 cd circScan-0.1<BR>
 make<BR>
+
 The newly compiled binary (circScan) is in the circScan /bin directory. You can run it from there, as in this example:<BR>
 bin/circScan ./test_data/testGenome.fa ./test_data/testGenome.fa.fai ./test_data/testAnnoFile.bed12 ./test_data/testGenome.sorted.bam ./test_data/testGenome.unmapped.fa >./test_data/test_circScan_candidates.txt<BR>
 You can check the output file test_circScan_candidates.txt in test_data directory.<BR>
@@ -122,5 +111,15 @@ Thanks a lot to everyone who contributed to the public code (e.g. BamTools) used
 
 Contact :
 ---------
-JianHua, Yang<yangjh7@mail.sysu.edu.cn or lsp03yjh@gmail.com><BR>
-last modified time: /01/2017/<BR>
+*****************************************************************************************<BR>
+ \*	circScan - An algorithm for discovering circRNA interactions with RNA-binding proteins<BR>
+ \*  (RBPs) and ribosomes from short-read (18-50nt) CLIP-seq and ribo-seq datasets<BR>
+ \*<BR>
+ \*	Author : Jian-Hua Yang <yangjh7@mail.sysu.edu.cn><BR>
+ \* <BR>
+ \*	RNA Information Center, School of Life Sciences, Sun Yat-Sen University<BR>
+ \*	<BR>
+ \*  Create date: 09/18/2016<BR>
+ \*  <BR>
+ \*  last modified time: /01/2017/<BR>
+ ****************************************************************************************<BR>
