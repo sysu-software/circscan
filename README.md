@@ -27,7 +27,7 @@ Mapped alignments must be sorted BAM format<BR>
 
 Installation:<BR>
 ---------
-Download circScan-0.1.tar.gz; unpack it, and make:<BR>
+Download circScan-0.1.tar.gz from https://github.com/sysu-software/circscan/releases ; unpack it, and make:<BR>
 tar -xzvf circScan-0.1.tar.gz<BR>
 cd circScan-0.1<BR>
 make<BR>
